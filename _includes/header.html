@@ -1,0 +1,34 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="{{ "/" | relative_url }}">
+        <img src="{{ "/assets/logo.svg" | relative_url }}" height="60" alt="{{ site.title }}">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        {% if include.highlight_link %}
+          {% assign highlight_link = include.highlight_link %}
+        {% else %}
+          {% assign highlight_link = page.highlight_link %}
+        {% endif %}
+        {% for link in site.data.navigation %}
+        <li>
+          {% assign link_url = link.href | relative_url %}
+          <a
+            href="{{ link_url }}"
+            {% if link.external %} target="_blank" {% endif %}
+            class="nav-link
+            {% if link_url == highlight_link %}active{% endif %}"
+          >
+            {{ link.name }}
+            {% if link_url == highlight_link %}<span class="sr-only">(current)</span>{% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
+

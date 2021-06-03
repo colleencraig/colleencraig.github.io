@@ -1,0 +1,16 @@
+<div class="meeting">
+    <div class="meeting-details">
+        <h2 class="meeting-title">{{ meeting.title }}</h2>
+        <h3 class="meeting-time">{{ meeting.path | date: "%A, %B %-d, %Y" }} | {{ meeting.time }} </h3>
+        <div class="meeting-body">
+            <p>
+                {{ meeting.description | markdownify | remove: "<p>" | remove: "</p>" }}
+            </p>
+        </div>
+        <div class="meeting-buttons">
+        {% if meeting.registration %}
+            <a href="{{meeting.registration}}" class="btn btn-meeting" role="button">Register to Attend</a>
+        {% endif %}
+        </div>
+    </div>
+</div>

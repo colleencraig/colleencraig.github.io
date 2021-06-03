@@ -1,0 +1,13 @@
+url: "https://ohredistrict.org" 
+baseurl: "/"
+title: "Ohio Citizens' Redistricting Commission"
+collections:
+ people:
+    title: People
+    output: false
+ meetings:
+    title: Meetings
+    output: false
+ uploads:
+    title: Uploads
+    output: true

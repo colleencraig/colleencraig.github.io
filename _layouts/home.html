@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  <body>
+    <div id="wrap">
+      <main role="main" class="container-fluid flex-fill px-0">
+        {% include header.html %}
+        <div class="row no-gutters">
+          <div class="col home-bleed">
+            <p>
+              Community-Centered Redistricting for Ohio
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto info-container">
+            {{content}}
+          </div>
+        </div>
+        <hr />
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto home-meeting-container">
+            <h1>Next Meeting</h1>
+            {% assign next_meeting = site.meetings | where: "featured", true %}
+            {% for meeting in next_meeting %}
+              {% include meeting.html meeting=meeting %}
+            {% endfor %}
+          </div>
+        </div>
+        <hr />
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto info-container">
+            <h1>Meet The Ohio Citizens’ Redistricting Commission</h1>
+            {% include team.html %}
+            <h2>Commission Selection Process</h2>
+            <p>
+              Commission members are selected through an application or referral process. There is no requirement for existing familiarity with redistricting. We desire a wide range of background knowledge on the topic.
+            </p>
+          </div>
+
+        </div>
+      </main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,17 @@
+nav {
+    font-family: $header-font;
+    border-bottom: 1px solid $sep-color;
+}
+
+.nav-link {
+    color: $main-color !important;
+    font-size: 1.1rem;
+}
+
+.active > .nav-link {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 0;
+}

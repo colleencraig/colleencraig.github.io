@@ -1,0 +1,242 @@
+h1, h2, h3 {
+  color: $secondary-color;
+  font-family: $header-font;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+.meeting-details h2 {
+  font-size: 1.5rem;
+}
+
+.meeting-details h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+
+p, .info-container li {
+  color: $text-color;
+  font-family: $body-font;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+hr {
+  margin: 0;
+}
+
+.home-bleed {
+  position: relative;
+}
+
+.home-bleed::after {
+  content: "";
+  background: url('/assets/ohdual.png');
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+.home-bleed p {
+  padding: 3rem 5rem;
+  color: $secondary-color;
+  font-family: $lead-font;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.2rem;
+}
+
+.info-container, .home-meeting-container {
+  max-width: 900px;
+  padding: 2.5rem 3rem;
+}
+
+.home-meeting-container h1, .info-container h1 {
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin-top: 2.5rem;
+}
+
+body {
+  overflow-x: hidden; // hack for fluid container
+}
+
+nav {
+  padding-left: 5rem !important;
+}
+
+.navbar-brand {
+  margin-right: 1.5rem;
+}
+
+.bio {
+  background-color: $bg-color;
+  padding: 2.5rem 4rem;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bio p {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+
+.bio-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+
+.bio-header h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.meeting {
+  background-color: $bg-color;
+  max-width: 960px;
+  margin-bottom: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 2px;
+}
+
+.home-meeting-container > .meeting {
+  max-width: 800px;
+}
+
+.meeting p {
+  font-size: 1.1rem;
+}
+
+.meeting-image {
+  height: 240px;
+  float: left;
+}
+
+@media screen and (max-width: 576px) {
+  .meeting-image {
+    display: hidden;
+  }
+}
+
+.meeting-header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: 990px;
+}
+
+.nav-link .active {
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 8rem;
+}
+
+footer {
+  padding: 2.75rem 7rem;
+  background-color: $main-color;
+  position: relative;
+  height: 7rem;
+  width: 100%;
+  margin-top: -7rem;
+  clear: both;
+}
+
+footer p {
+  color: $text-inv-color;
+  font-family: $lead-font;
+}
+
+.info-container a:not(.btn) {
+  color: $main-color;
+}
+
+
+.btn-meeting, .btn-meeting:hover {
+  background-color: $secondary-color;
+  color: $text-inv-color;
+  font-family: $header-font;
+  font-weight: bold;
+  margin-left: -.15rem;
+}
+
+
+
+table {
+  width: 100%;
+  margin: 0 0 1rem;
+  border-collapse: separate;
+  font-family: $body-font;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td:nth-child(odd) {
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 90%;
+  padding: 0.75rem;
+}
+
+td {
+  font-size: 85%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.rules {
+  font-family: $main-color;
+  td:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+
+
+
+

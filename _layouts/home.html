@@ -21,11 +21,12 @@
         <hr />
         <div class="row justify-content-md-center">
           <div class="col-md-auto home-meeting-container">
-            <h1>Next Meeting</h1>
+            <h1>Next Hearings</h1>
             {% assign next_meeting = site.meetings | where: "featured", true %}
             {% for meeting in next_meeting %}
-              {% include meeting.html meeting=meeting %}
+              {% include hearing.html meeting=meeting %}
             {% endfor %}
+            <a href="/past-hearings.html">Past Hearing Videos</a>
           </div>
         </div>
         <hr />

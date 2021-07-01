@@ -7,6 +7,9 @@ nav {
     color: $main-color !important;
     font-size: 1.1rem;
 }
+.nav-link:hover {
+    text-decoration: underline;
+}
 
 .active > .nav-link {
     font-weight: bold;

@@ -8,9 +8,20 @@
             </p>
         </div>
         <div class="meeting-buttons">
-        {% if meeting.registration %}
+        {% if meeting.registration and meeting.past != true %}
             <a href="{{meeting.registration}}" class="btn btn-meeting" role="button">Register to Attend</a>
         {% endif %}
         </div>
+        {% if meeting.video %}
+        <iframe
+            width="560"
+            height="315"
+            src="{{meeting.video}}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        {% endif %}
     </div>
 </div>

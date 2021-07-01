@@ -1,0 +1,23 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div id="navbarSupportedContent">
+      <ul class="navbar-nav nav-links--centered mx-auto">
+        {% if include.highlight_link %}
+        {% assign highlight_link = include.highlight_link %}
+        {% else %}
+        {% assign highlight_link = page.highlight_link %}
+        {% endif %}
+        {% for link in site.data.hearing_categories %}
+        <li>
+          {% assign link_url = link.href | relative_url %}
+          <a href="{{ link_url }}" {% if link.external %} target="_blank" {% endif %} class="nav-link
+{% if link_url == highlight_link %}active{% endif %}">
+            {{ link.name }}
+            {% if link_url == highlight_link %}<span class="sr-only">(current)</span>{% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

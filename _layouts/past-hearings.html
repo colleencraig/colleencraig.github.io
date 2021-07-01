@@ -6,7 +6,8 @@
   <div id="wrap">
     <main role="main" class="container-fluid flex-fill px-0">
       {% include header.html %}
-      <div class="row justify-content-md-center">
+      {% include hearing_categories.html %}
+      <!-- <div class="row justify-content-md-center">
         <div class="col-md-auto meeting-header">
           <h1>Upcoming Public Hearings</h1>
         </div>
@@ -20,12 +21,12 @@
             {% endunless %}
           {% endfor %}
         </div>
-      </div>
+      </div> -->
       
 
       <div class="row justify-content-md-center">
         <div class="col-md-auto meeting-header">
-          <h1>Past Hearings</h1>
+          <h1>Past Public Hearings</h1>
         </div>
       </div>
 

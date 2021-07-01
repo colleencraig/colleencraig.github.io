@@ -1,4 +1,4 @@
 ---
 title: Hearings
-layout: meetings
+layout: hearings
 ---

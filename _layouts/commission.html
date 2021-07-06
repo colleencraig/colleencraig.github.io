@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+{% include head.html %}
+
+<body>
+  <div id="wrap">
+    <main role="main" class="container-fluid flex-fill px-0">
+      {% include header.html %}
+      <!-- <div class="row justify-content-md-center">
+        <div class="col-md-auto meeting-header">
+          <h1>Upcoming Public Hearings</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto home-meeting-container">
+          {% for meeting in site.meetings %}
+            {% unless meeting.past %}
+            {% include hearing.html meeting=meeting %}
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div> -->
+      
+
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto meeting-header">
+          <h1>Commissioner Bios</h1>
+        </div>
+      </div>
+
+      {% for person in site.people %}
+        {% include bio.html person=person %}
+      {% endfor %}
+
+    </main>
+  </div>
+  {% include footer.html %}
+</body>
+
+</html>

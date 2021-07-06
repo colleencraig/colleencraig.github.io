@@ -1,52 +1,7 @@
 <div class="row">
   <ul>
-    <li>
-      Barbara Sykes, Former state representative, Ohio Legislative Black Caucus (OBLC) Foundation President & CEO
-    </li>
-    <li>
-      Tom Roberts, Former state senator, President of the Ohio State Conference of the NAACP
-    </li>
-    <li>
-      Andre Washington, President of the A. Philip Randolph Institute (APRI) Ohio Chapter
-    </li>
-    <li>
-      Katy Shanahan, All On The Line Ohio State Director
-    </li>
-    <li>
-      Kathleen Clyde, Former state representative (OCRC Co-Chair)
-    </li>
-    <li>
-      Greg Moore, Promise of Democracy Foundation (OCRC Co-Chair)
-    </li>
-    <li>
-      Jeniece Brock, Health Scientist, Policy & Advocacy Director for the Ohio Organizing Collaborative (OCRC Vice Chair)
-    </li>
-    <li>
-      Sam Gresham, Chair of Common Cause Ohio
-    </li>
-    <li>
-      Akii Butler, Ohio Student Association
-    </li>
-    <li>
-      Dr. Richard Gunther, Retired professor
-    </li>
-    <li>
-      Chris Tavenor, Ohio Environmental Council
-    </li>
-    <li>
-      Dr. Lis Regula, Professor and LGBTQ activist
-    </li>
-    <li>
-      Jeremy Blake, Newark City Council member, Equality Ohio board member
-    </li>
-    <li>
-      Dr. Ellen Greene Bush, Clinical Psychologist
-    </li>
-    <li>
-      Alan Bannister, Ohio political professional, former Ohio statewide political director for Joe Biden
-    </li>
-    <li>
-      Amina Barhumi, Council on American-Islamic Relations CAIR-Ohio
-    </li>
+    {% for person in site.people %} 
+    <li>{{person.name}}, {{person.title}}</li>
+    {% endfor %}
   </ul>
 </div>

@@ -1,7 +1,7 @@
 ---
 name: Jeremy Blake
 title: Newark City Council member, Equality Ohio board member
-photo: /uploads/bio/JeremyBlake.jpg
+photo: /assets/images/bio/jeremy_blake.jpg
 ---
 Newark Councilmember Jeremy Blake has spent more than twenty-five years in service to others as a volunteer in the community, serving on various community boards and committees, Ohio Senate staff member, Newark City School Board President and a community organizer.
 

@@ -20,4 +20,4 @@ The OCRC has three goals:
 3. Draw unity maps based on community input and feedback.
 
 ## Questions?
-For more information, email: [info@commissionocrc.org](mailto:info@commissionocrc.org).
+ Visit our [FAQ page](faq) to learn more. For additional questions, email: [info@commissionocrc.org](mailto:info@commissionocrc.org).

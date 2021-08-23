@@ -1,12 +1,10 @@
 - name: Home
   href: /
-- name: Educational Materials
-  href: /ed-materials
-- name: Process
-  href: /process
-- name: Work
-  href: /work
+- name: Media
+  href: /media
 - name: Hearings
   href: /hearings
+- name: About Redistricting
+  href: /process
 - name: Get Involved
   href: /get-involved

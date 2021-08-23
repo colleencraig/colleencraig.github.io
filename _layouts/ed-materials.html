@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+{% include head.html %}
+
+<body>
+  <div id="wrap">
+    <main role="main" class="container-fluid flex-fill px-0">
+      {% include header.html %}
+      {% include about_redistricting_categories.html %}
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto info-container">
+          <h1>Educational Materials</h1>
+        
+            <h2>Why?</h2>
+            <p><b>Redistricting</b> is dividing up a jurisdiction (like a state, county, or city) into districts for the purpose of electing representatives. Where and how the lines are drawn influences everything from who is likely to be elected to how resources get allocated. And when it comes to democratic representation, communities matter. If your community is split up into different small pieces every ten years, it makes it harder to have a voice in government.</p>
+
+            <p>The official line-drawing process in Ohio is controlled by the legislators themselves, with a commission of political appointees drawing the legislative lines.  The Ohio Citizens' Redistricting Commission was created to model community-centered redistricting.</p>
+
+
+            <h2>Redistricting rules</h2>
+            <p>A combination of national, state, and local rules guide the redistricting process. </p>
+
+            <table class="rules">
+              <thead>
+              <tr>
+                <th colspan="4">Federal Requirements</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Population balance</b>: Districts should have very close to the same population</td>
+                <td><img src="/assets/rules/equalpop.png"  alt="Population balance diagram" border=0 height=128 width=174></td>
+                <td><b>Voting Rights Act compliance</b>: Districts cannot block minority groups from electing candidates of choice</td>
+                <td><img src="/assets/rules/vra.png"  alt="Clip art of voting rights demonstrators" border=0 height=128 width=174></td>
+              </tr>
+            </tbody>
+            </table>
+
+            <table class="rules">
+            <thead>
+              <tr>
+                <th colspan="4">Common State and Local Requirements</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Communities of Interest</b>: Groups with significant shared interests should be kept together</td>
+                <td><img src='/assets/rules/farmers_coi.png' alt="Clip art of farmers" border=0 height=128 width=174></td>
+                <td><b>Contiguity</b>: Each district should be one connected piece</td>
+                <td><img src='/assets/rules/nesting_contiguity.png' alt="Nesting contiguity diagram" border=0 height=128 width=174></td>
+              </tr>
+              <tr>
+                <td><b>Compactness</b>: District shapes should be “reasonable”</td>
+                <td><img src='/assets/rules/compactness.png' alt="Compactness diagram" border=0 height=128 width=174></td>
+                <td><b>Boundary preservation</b>: District lines should follow natural and official boundaries, such as rivers or town and county borders</td>
+                <td><img src='/assets/rules/boundary_pres.png' alt="Boundary preservation diagram" border=0 height=128 width=174></td>
+              </tr>
+            </tbody>
+            </table>
+
+            <p>Besides the federal requirements of population balance and the Voting Rights Act, Ohio law specifies that districts be contiguous, compact, and respect political boundaries.  The 99 state House districts must nest 3-to-1 inside state Senate districts. And the legislature and its commission must hold a series of public hearings, which will include testimony about communities of interest. For more details, see <a href="https://redistricting.lls.edu/state/ohio/?cycle=2020&level=Congress&startdate=#criteria" target="_blank">All About Redistricting: Ohio</a> or the Brennan Center’s <a href="https://www.brennancenter.org/sites/default/files/publications/2019_06_50States_FINALsinglepages_35.pdf" target="_blank">Ohio state guide (pdf)</a>.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+          
+
+  {% include footer.html %}
+</body>
+
+</html>

@@ -1,4 +1,4 @@
 ---
 title: Media
-layout: work
+layout: media
 ---

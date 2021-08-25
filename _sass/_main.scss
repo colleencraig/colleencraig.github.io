@@ -232,8 +232,13 @@ th {
   padding: 0.75rem;
 }
 
-td {
-  font-size: 85%;
+table.map th {
+  font-size: 1.3rem;
+  padding: 0.75rem;
+}
+
+table.map td {
+  font-size: 1.25rem;
   text-align: center;
   padding: 0.5rem;
 }

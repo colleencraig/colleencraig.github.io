@@ -8,6 +8,12 @@ title: About
     <a href="https://districtr.org/event/open-maps" target="_blank" class="btn btn-meeting spec" role="button">Draw Community Maps</a> <a href="/past-hearings.html" class="btn btn-meeting spec" role="button">Watch Past Hearing Videos</a>
 </p>
 
+Our Unity Maps are complete! 
+
+<p class="default-button">
+            <a href="/unity-maps" class="btn btn-meeting spec" role="button">View Unity Maps</a> <a href="/assets/images/unity-maps/OCRC-Report-State-Leg.pdf" target="_blank" class="btn btn-meeting spec" role="button">View Full Report</a>
+          </p>
+
 ## Goals 
 The OCRC has three goals: 
 1. Model a thorough and robust engagement process.

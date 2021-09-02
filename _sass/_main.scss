@@ -25,6 +25,10 @@ h3 {
   font-weight: normal;
 }
 
+.center {
+  text-align: center;
+}
+
 
 p, .info-container li {
   color: $text-color;
@@ -206,6 +210,14 @@ footer p {
 
 .btn-meeting, .btn-meeting:hover {
   background-color: $secondary-color;
+  color: $text-inv-color;
+  font-family: $header-font;
+  font-weight: bold;
+  margin-left: -.15rem;
+}
+
+.btn-meeting-maroon, .btn-meeting-maroon:hover {
+  background-color: $main-color;
   color: $text-inv-color;
   font-family: $header-font;
   font-weight: bold;

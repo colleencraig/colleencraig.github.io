@@ -3,22 +3,24 @@ layout: home
 title: About
 ---
 
-<p class="default-button">
-    <a href="{{site.data.portal.url}}" target="_blank" class="btn btn-meeting spec" role="button">Public Submission Portal</a>
-    <a href="https://districtr.org/event/open-maps" target="_blank" class="btn btn-meeting spec" role="button">Draw Community Maps</a> <a href="/past-hearings.html" class="btn btn-meeting spec" role="button">Watch Past Hearing Videos</a>
-</p>
+## Our Unity Maps are complete! 
 
-Our Unity Maps are complete! 
-
-<p class="default-button">
+<p class="default-button-center">
             <a href="/unity-maps" class="btn btn-meeting spec" role="button">View Unity Maps</a> <a href="/assets/images/unity-maps/OCRC-Report-State-Leg.pdf" target="_blank" class="btn btn-meeting spec" role="button">View Full Report</a>
           </p>
+
+{% include unity-maps-image-table.html %}
 
 ## Goals 
 The OCRC has three goals: 
 1. Model a thorough and robust engagement process.
 2. Develop and demonstrate citizen-derived principles of redistricting.
 3. Draw unity maps based on community input and feedback to be submitted as testimony to the state’s official redistricting commission.
+
+<p class="default-button-center">
+    <a href="{{site.data.portal.url}}" target="_blank" class="btn btn-meeting spec" role="button">Public Submission Portal</a>
+    <a href="https://districtr.org/event/open-maps" target="_blank" class="btn btn-meeting spec" role="button">Draw Community Maps</a> <a href="/past-hearings.html" class="btn btn-meeting spec" role="button">Watch Past Hearing Videos</a>
+</p>
 
 # About the Ohio Citizens’ Redistricting Commission 
 

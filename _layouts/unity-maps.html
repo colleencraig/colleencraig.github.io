@@ -9,8 +9,30 @@
       <div class="row justify-content-md-center">
         <div class="col-md-auto info-container">
           <h1>{{page.title}}</h1>
-          <p class="default-button">
-            <a href="/assets/images/unity-maps/OCRC-Report-State-Leg.pdf" target="_blank" class="btn btn-meeting spec" role="button">View Full Report</a>
+          
+
+          {% include unity-maps-congressional-image-table.html %}
+
+          <table class="map">
+            <thead>
+            <tr>
+              <th>Congressional Unity Map Breakdown</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                7 Democratic seats</td>
+            </tr>
+            <tr>
+              <td>
+                8 Republican seats<br /><br /></td>
+            </tr>
+          </tbody>
+          </table>
+
+          <p class="default-button-center">
+            <a href="/assets/images/unity-maps/OCRC-Report-State-Leg.pdf" target="_blank" class="btn btn-meeting spec" role="button">View Statehouse Maps Report</a>
           </p>
 
           {% include unity-maps-image-table.html %}
